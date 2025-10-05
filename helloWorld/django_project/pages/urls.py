@@ -1,7 +1,11 @@
 from django.urls import path,include
 from .views import home_page_view
-from django.contrib import admin
+
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("", include("pages.urls")), # new
+    
+    path("", home_page_view, name="home" ),
 ]
+
+
+# please check if this two files are correct or not
+# one is this view..py and other is urls.py
